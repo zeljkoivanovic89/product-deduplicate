@@ -40,28 +40,3 @@ Rollback execution – Restore products from the backup: enable disabled product
 Full vs Partial – A full backup allows complete restoration; partial rollback restores only key fields for speed.
 
 Best practices – Rollback should be a manual process triggered by the admin; backups must be stored reliably, and old backups should be cleaned up after a successful commit.
-
-## Commands
-After you clicked Analyse and then Run, if it is sent successfully run command below for execution message in the queue:
-
-php bin/magento queue:consumers:start product_deduplication.run
-
-
-List queue consumers:
-php bin/magento queue:consumers:list
-
-This can be automated with Cron job.
-
-
-## Module Screenshots
-
-1. ![1](docs/images/1.png)
-2. ![2](docs/images/2.png)
-3. ![3](docs/images/3.png)
-4. ![4](docs/images/4.png)
-5. ![5](docs/images/5.png)
-6. ![6](docs/images/6.png)
-7. ![7](docs/images/7.png)
-8. ![8](docs/images/8.png)
-9. ![9](docs/images/9.png)
-10. ![10](docs/images/10.png)
